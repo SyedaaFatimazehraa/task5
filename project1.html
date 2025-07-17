@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Internship Program</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<style>
+  *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --clr-primary: #0a84ff;
+        --clr-dark: #0f172a;
+        --clr-light: #ffffff;
+        --font-main: 'Inter', sans-serif;
+      }
+
+      body {
+        font-family: var(--font-main);
+        background-color: #f9fafb;
+        color: var(--clr-dark);
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 1.25rem;
+      }
+
+      header {
+        background: var(--clr-light);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .site-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--clr-primary);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.25rem;
+      }
+
+      .nav-links a {
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--clr-primary);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 5rem 1rem 4rem;
+        background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+      }
+
+      .hero h1:hover {
+        font-size: clamp(2.5rem, 6vw, 3.75rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #334155;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--clr-primary);
+        color: var(--clr-light);
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background 0.25s ease;
+      }
+
+      .btn:hover {
+        background: #0069d9;
+      }
+
+      .about {
+        padding: 4rem 1rem;
+        background-color: #fff;
+      }
+
+      .about h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--clr-primary);
+      }
+
+      .about p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        text-align: center;
+        color: #475569;
+      }
+
+      .benefits {
+        background: #f1f5f9;
+        padding: 4rem 1rem;
+      }
+
+      .benefits h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--clr-primary);
+      }
+
+      .benefits ul {
+        list-style: none;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .benefits li {
+        background: #e2e8f0;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        background: var(--clr-dark);
+        color: var(--clr-light);
+        padding: 2rem 1rem;
+        text-align: center;
+        font-size: 0.875rem;
+      }
+
+      footer a:hover {
+        color: var(--clr-light);
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        .nav-links {
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+      }
+</style>
+  <body>
+    <!-- ===== Header ===== -->
+    <header>
+      <div class="container nav">
+        <div class="site-title">Remote Internship Program</div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#apply">Apply</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="apply">
+      <div class="container">
+        <h1>Join Our Remote Internship Program!</h1>
+        <p>Learn by working on real projects.</p>
+        <a href="#" class="btn">Apply Now</a>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <p>
+          Enjoy the freedom to learn from anywhere while gaining
+          hands-on experience on real‑world projects and collaborating
+          with industry professionals.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Benefits Section ===== -->
+    <section class="benefits">
+      <div class="container">
+        <ul>
+          <li>Flexible Hours</li>
+          <li>Real Projects</li>
+          <li>Certificate of Completion</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <p>
+        Contact us: <a href="mailto:internships@example.com">internships@example.com</a>
+      </p>
+      <p>&copy; 2025 Remote Internship Program. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
